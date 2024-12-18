@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <title>main page</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./program.html">Преимущества</a></li>
+          <li><a href="./process.html">Программа</a></li>
+          <li><a href="./pricing.html">Вопросы</a></li>
+          <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="hero">
+        <h1>погружение</h1>
+        <div class="hero__image">
+          <img src="./images/pages/main/hero/divers.png" alt="погружение">
+        </div>
+        <div class="slogan">
+          <div class="description">
+            <p>Погружение в системное администрирование</p>
+            <p>Как стать крутым сисадмином</p>
+          </div>
+          <button onclick="window.location.href='./process.html'">Хочу узнать!</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="slider">
+        <div>
+          <div class="slide">
+            <div class="slide-content">
+              <h2>Погружайся в глубину сетей</h2>
+              <p>Заряжай акваланг и вместе с друзьями ныряй под цифровую гладь — к сокровищам администрирования.</p>
+          </div>
+          <div class="slide-image">
+              <img src="./images/pages/main/slider/student1.jpeg" alt="Картинка 1">
+          </div>
+          </div>
+        </div>
+        <div>
+          <div class="slide">
+            <div class="slide-content">
+              <h2>На дно техноморя</h2>
+              <p>Отправляйся в подводное путешествие с командой будущих айтишников, ищущих ответы на дне морей технологий.</p>
+          </div>
+          <div class="slide-image">
+              <img src="./images/pages/main/slider/student2.jpeg" alt="Картинка 3">
+          </div>
+          </div>
+      </div>
+        <div>
+            <div class="slide">
+              <div class="slide-content">
+                <h2>Всплывай крутым спецом</h2>
+                <p>Выныривай вместе с бодрой группой единомышленников и приноси на поверхность новые фишки для реального айти-руля</p>
+            </div>
+            <div class="slide-image">
+                <img src="./images/pages/main/slider/student3.jpeg" alt="Картинка 3">
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container container">
+      <span class="footer-text">© 2024 Все права защищены</span>
+      <span class="footer-text">ГБПОУ Чеховский техникум</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev" style="color: var(--color_01);">&#10094;</button>',
+            nextArrow: '<button type="button" class="slick-next" style="color: var(--color_01);">&#10095;</button>',
+        });
+    });
+</script>
+</body>
+</html>
